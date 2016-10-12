@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+      <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input [(ngModel)] = "usercreds.name" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input [(ngModel)] = "usercreds.password" type="password"></ion-input>
+      </ion-item>
+  </ion-list>
+  <button ion-button (click)="login(usercreds)">Login</button>
+  <button ion-button (click)="signup()">Signup</button>
+</ion-content>
